@@ -1,0 +1,19 @@
+<?php
+
+// DBdev (c) 2014 by Siarkowy <siarkowy@siarkowy.net>
+// Released under the terms of GNU GPL v3 license.
+
+class Config
+{
+    // world database
+    const dbHost = 'hostname';
+    const dbUser = 'username';
+    const dbPass = 'password';
+    const dbName = 'wdb_name';
+
+    // www database
+    const dbUrl = 'http://db.hellground.net/';
+
+    // misc
+    const lootChance = '%d%s'; // loot chance format: chance, isQuest
+}
