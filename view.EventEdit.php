@@ -3,7 +3,7 @@
                         <label for="e[type]" class="col-sm-2 control-label">Type</label>
                         <div class="col-sm-10">
                             <select class="form-control" name="e[type]">
-<?php foreach (Event::$events as $id => $data): if ($id > 0): ?>
+<?php foreach (Event::$events as $id => $data): if ($id >= 0): ?>
                                 <option value="<?= $id ?>"<?= $id == @$e->event_type ? ' selected="selected"' : '' ?>><?= $data[0] ?></option>
 <?php endif; endforeach ?>
                             </select>
