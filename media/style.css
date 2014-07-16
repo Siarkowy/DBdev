@@ -1,49 +1,41 @@
-body {
-}
-
 #header {
-    background-color: white;
+  background-color: white;
 }
 
 #content {
-    background-color: white;
-    padding-bottom: 20px;
+  background-color: white;
+  padding-bottom: 20px;
 }
 
 #footer {
-    color: white;
-    padding: 10px 0 0 0;
-    background-color: #222;
-}
-
-.loot {
-    max-height: 51em;
-    overflow: auto;
+  color: white;
+  padding: 10px 0 0 0;
+  background-color: #222;
 }
 
 .nav {
-    border-bottom: 0 none;
+  border-bottom: 0 none;
 }
 
 .page-header {
-    border-bottom: medium none;
+  border-bottom: medium none;
 }
 
 td ul {
-    padding-left: 0;
-    list-style-type: none;
+  padding-left: 0;
+  list-style-type: none;
 }
 
 .loot td, .loot th {
-    text-align: center;
+  text-align: center;
 }
 
 .loot td:first-child, .loot th:first-child {
-    text-align: left;
+  text-align: left;
 }
 
 .loot td:last-child, .loot th:last-child {
-    text-align: right;
+  text-align: right;
 }
 
 @media (min-width: 768px) {
@@ -60,5 +52,12 @@ td ul {
     position: absolute;
     bottom: 0;
     width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .loot {
+      max-height: 51em;
+      overflow: auto;
   }
 }
