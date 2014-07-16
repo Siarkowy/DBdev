@@ -1,5 +1,8 @@
 body {
-    background-color: #222;
+}
+
+#header {
+    background-color: white;
 }
 
 #content {
@@ -10,6 +13,7 @@ body {
 #footer {
     color: white;
     padding: 10px 0 0 0;
+    background-color: #222;
 }
 
 .loot {
@@ -42,3 +46,19 @@ td ul {
     text-align: right;
 }
 
+@media (min-width: 768px) {
+  html {
+    position: relative;
+    min-height: 100%;
+  }
+
+  body {
+    padding-bottom: 26pt;
+  }
+
+  #footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+}
