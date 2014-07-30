@@ -16,4 +16,7 @@
                     <li class="<?= $view == 'Loot' ? 'active' : '' ?>">
                         <a href="?page=loot&amp;id=<?= (int) @$request['id'] ?>" accesskey="l">Loot</a>
                     </li>
+                    <li>
+                        <a href="<?= Config::dbUrl ?>?npc=<?= @$request['id'] ?>">Database</a>
+                    </li>
                 </ul>

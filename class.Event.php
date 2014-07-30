@@ -235,7 +235,7 @@ class Event extends Factory
         0 => array('None'),
         1 => array('Text', 'Text', 'Text', 'Text'),
         2 => array('Set faction', 'FactionId'),
-        3 => array('Morph', 'Entry', 'Model'),
+        3 => array('Morph', 'Creature', 'Model'),
         4 => array('Sound', 'SoundId'),
         5 => array('Emote', 'EmoteId'),
         6 => array('Random say UNUSED'),

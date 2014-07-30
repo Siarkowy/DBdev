@@ -29,6 +29,6 @@ class Creature extends Factory
 
     public function __toString()
     {
-        return "<a href='" . Config::dbUrl . "?npc={$this->entry}'>{$this->name}</a> <sup>{$this->entry}</sup>";
+        return "<a href='?page=scripts&amp;id={$this->entry}'>{$this->name}</a> <sup>{$this->entry}</sup>";
     }
 }
