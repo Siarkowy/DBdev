@@ -10,6 +10,6 @@ class Item extends Factory
 
     public function __toString()
     {
-        return "<a href='" . Config::dbUrl . "?item={$this->entry}'>[{$this->name}]</a>";
+        return "<a href='" . Config::dbUrl . "?item={$this->entry}' class='quality{$this->Quality}'>[{$this->name}]</a>";
     }
 }

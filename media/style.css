@@ -38,6 +38,13 @@ td ul {
   text-align: right;
 }
 
+.quality0 { color: #9d9d9d; } /* poor */
+.quality1 { color: #000000; } /* common */
+.quality2 { color: #1eaf00; } /* uncommon */
+.quality3 { color: #0080ff; } /* rare */
+.quality4 { color: #b048f8; } /* epic */
+.quality5 { color: #ff8000; } /* legendary */
+
 @media (min-width: 768px) {
   html {
     position: relative;

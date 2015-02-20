@@ -47,13 +47,20 @@ END;
             else
             {
                 $count = $entry->mincountOrRef;
+
                 if ($entry->maxcount != $entry->mincountOrRef)
                     $count .= '&mdash;' . $entry->maxcount;
+                else if ($count == '1')
+                    $count = '';
+
+                if ($count != '')
+                    $count = 'x' . $count;
+
                 $cond = Utils::getLootCondition($entry->lootcondition, $entry->condition_value1, $entry->condition_value2);
                 $chance = sprintf(Config::lootChance, abs($entry->ChanceOrQuestChance), $entry->ChanceOrQuestChance < 0 ? ' quest' : '');
                 $ret .= <<<END
     <tr>
-        <td>{$entry->getItem()} x{$count}</td>
+        <td>{$entry->getItem()} {$count}</td>
         <td>{$cond}</td>
         <td>{$entry->groupid}</td>
         <td>{$chance}</td>
